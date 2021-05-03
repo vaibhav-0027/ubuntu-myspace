@@ -1,0 +1,20 @@
+.draggable-topbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: move;
+}
+
+.resizable-box {
+    border: 2px solid $dark-gray;
+    border-top: none;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+@media all and (max-width: 768px) {
+    .resizable-box {
+        overflow-y: scroll !important;
+        overflow-x: hidden !important;
+    }
+}

@@ -1,0 +1,79 @@
+.login-input-field {
+    width: 300px;
+    color: white;
+    background-color: $dark-purple;
+    border: 1px solid $light-purple;
+}
+
+.login-input-field:active, .login-input-field:focus {
+    background-color: $dark-purple;
+    color: white;
+    box-shadow: 0 0 0 0.2rem $orange;
+    border: 1px solid $light-purple;
+}
+
+.login-button, .login-button:hover, .login-button:active {
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.login-page-container {
+    display: flex;
+    flex-direction: column;
+    // height: #{"max(100%, 100vh)"};
+    height: 100vh;
+}
+
+@media all and (max-width: 1024px) {
+    .login-page-container {
+        overflow-y: hidden;
+    }
+}
+
+.login-button-row {
+    .btn,
+    .btn:hover,
+    .btn:active,
+    .btn:focus {
+        background-color: $dark-purple !important;
+    }
+
+    .btn-secondary {
+        border: none;
+        border-color: transparent;
+    }
+}
+
+.auth-ubuntu {
+    height: 300px;
+    width: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.auth-link, .auth-link:hover, .auth-link:active, .auth-link:focus {
+    text-decoration: none !important;
+    display: flex;
+    justify-content: flex-start;
+    color: #e893f5;
+}
+
+.terminal-base {
+    max-width: 100%;
+}
+
+.lfnIny {
+    max-width: 100%;
+}
+
+.dMFuoo {
+    max-width: 100%;
+    height: 92%;
+}
+
+.jLRkOo {
+    width: 100%;
+}

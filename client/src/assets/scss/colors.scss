@@ -1,0 +1,24 @@
+$light-purple: #824c8a;
+$purple: #613066;
+$dark-purple: #411847;
+$orange: #d6781a;
+$dark-gray: #4d4849;
+$off-white: rgba(237, 228, 228, 0.7);
+
+
+
+
+.bg-purple { background-color: $purple; }
+.bg-dark-purple { background-color: $dark-purple; }
+.bg-white { background-color: white; }
+.bg-orange { background-color: $orange; }
+.bg-dark-gray { background-color: $dark-gray; }
+.bg-off-white { background-color: $off-white; }
+
+
+.text-white { color: white; }
+.text-purple { color: $purple; }
+.text-light-purple { color: $light-purple; }
+.text-white { color: white; }
+.text-orange { color: $orange; }
+.text-gray { color: gray }

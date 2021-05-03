@@ -1,0 +1,71 @@
+.navbar-container {
+    line-height: 30px;
+    background-color: $dark-gray;
+}
+
+.sidebar-container {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 75px;
+    overflow: hidden;
+    z-index: 10;
+    background-color: rgba(207, 188, 192, 0.4);
+    border-right: 1px  black;
+}
+
+.sidebar-icon {
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+}
+
+.sidebar-icon:hover {
+    transform: scale(1.1);
+}
+
+.sidebar-icon-inside {
+    background-color: rgba(179, 125, 136, 0.6);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-icon-image {
+    width: 80%;
+    height: 80%;
+}
+
+.navbar-dropdown {
+    display: flex;
+}
+
+.navbar-dropdown > .btn-secondary, .btn-secondary:focus, .btn-secondary:active {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.navbar-dropdown > .btn, .btn:focus, .btn:active, .btn:hover {
+    box-shadow: none !important;
+    background-color: transparent !important;
+}
+
+.only-time-navbar {
+    display: none;
+}
+
+@media all  and (max-width: 400px) {
+    .full-date-navbar {
+        display: none;
+    }
+
+    .only-time-navbar {
+        display: block;
+    }
+}

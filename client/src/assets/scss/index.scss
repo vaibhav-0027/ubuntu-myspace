@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.h-100vh { height: 100vh; }
+.h-90 { height: 90%; }
+.h-94 { height: 94%; }
+.cursor-pointer { cursor: pointer; }
+.decoration-none { text-decoration: none; }
+.text-line-through { text-decoration: line-through; }
+.unselectable {
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+/* custom scrollbar. Not supported in firefox */
+::-webkit-scrollbar {
+    width: 6px; /* for vertical scrollbars */
+    height: 4px; /* for horizontal scrollbars */
+}
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+}
+::-webkit-scrollbar-thumb {
+    background: #adb5bd;
+    border-radius: 100px;
+}   
+
+@import "./colors.scss";
+@import "./auth.scss";
+@import "./navbar.scss";
+@import "./homepage.scss";
+@import "./window.scss";
+@import "./todo-note.scss";
+@import "./explorer.scss";

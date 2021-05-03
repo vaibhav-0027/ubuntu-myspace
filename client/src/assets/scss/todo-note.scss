@@ -1,0 +1,135 @@
+.todo-plus-symbol {
+    color: $orange;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+.todo-row {
+    font-size: small;
+    line-height: 13px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.todo-border-bottom, .todo-border-bottom:focus {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid $orange !important;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.todo-add-task, .todo-add-task:hover, .todo-add-task:active, .todo-add-task:focus {
+    color: white;
+    background-color: $orange !important;
+    font-size: x-small;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 0;
+    margin-left: 0;
+    box-shadow: none;
+    border: none !important;
+}
+
+.todo-cancel, .todo-cancel:hover, .todo-cancel:focus, .todo-cancel:active {
+    color: black;
+    background-color:white !important;
+    font-size: x-small;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 0;
+    margin-left: 0;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.complete-todo-text {
+    z-index: 0;
+    line-height: 16px;
+}
+
+.todo-checkbox {
+    padding: 0;
+    padding-left: 1rem !important;
+}
+
+.todo-container {
+    overflow-y: scroll;
+    height: 85%;
+    width: 50%;
+}
+
+.todo-container-div {
+    height: 75%;
+    display: flex;
+    flex-direction: row;
+}
+
+@media all and (max-width: 768px) {
+    .todo-container-div {
+        flex-direction: column;
+    }
+
+    .todo-container {
+        width: 100%;
+        .row {
+            flex-wrap: nowrap;
+        }
+    }
+
+    .todo-checkbox {
+        padding-left: 0 !important;
+        margin-right: 0.25rem !important;
+    }
+}
+
+.notes-quill {
+    border: 1px solid $orange;
+    height: 70%;
+}
+
+.notes-quill > .ql-container {
+    height: 90%;
+    border: none;
+}
+
+.note-container {
+    width: 50%;
+}
+
+.note-container-div {
+    display: flex;
+    flex-direction: row;
+}
+
+.single-note {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    margin-left: 1.5rem;
+}
+
+@media all and (max-width: 768px) {
+    .note-container {
+        width: 100%;
+    }
+
+    .note-container-div {
+        flex-direction: column;
+    }
+
+    .single-note {
+        width: 94%;
+        margin-left: 0;
+    }
+}
