@@ -159,7 +159,7 @@ const ExplorerSidebar = (props: ExplorerSidebarProps) => {
     }
 
     return (
-        <Col md={2} lg={2} className="">
+        <Col md={3} lg={2} className="">
             {_renderNewFileButton()}
             {_renderNewFolderButton()}
             {_renderSpaceUsed()}

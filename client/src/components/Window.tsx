@@ -1,3 +1,4 @@
+import classnames from 'classnames';
 import React, { Dispatch, SetStateAction, useState } from 'react'
 import { Rnd } from "react-rnd";
 
@@ -15,6 +16,8 @@ interface windowProps {
 }
 
 const Window = (props: windowProps) => {
+
+    const [fullScreen, setFullScreen] = useState(true);
 
     const [height, setHeight] = useState(window.innerHeight-100);
     const [width, setWidth] = useState(window.innerWidth-90);
@@ -53,6 +56,8 @@ const Window = (props: windowProps) => {
         // setHeight(window.innerHeight);
         // setWidth(window.innerWidth);
         // rndRef?.current?.updateSize({ width: window.innerWidth, height: window.innerHeight });
+        return ;
+        setFullScreen(!fullScreen);
     }
 
     const _renderTopbar = () => {
@@ -85,24 +90,35 @@ const Window = (props: windowProps) => {
         return (<></>)
     }
 
+    // return (
+    //     <Rnd
+    //         default={{
+    //             x: 80,
+    //             y: 10,
+    //             width: width,
+    //             height: height,
+    //         }}
+    //         ref={rndRef}
+    //         className="resizable-box"
+    //         dragHandleClassName="drag"
+    //         onResizeStop={resizeHandler}
+    //         disableDragging={true}
+    //         resizeGrid={[0,0]}
+    //     >
+    //         {_renderContent()}
+    //     </Rnd>
+    // );
+
     return (
-        <Rnd
-            default={{
-                x: 80,
-                y: 10,
-                width: width,
-                height: height,
-            }}
-            ref={rndRef}
-            className="resizable-box"
-            dragHandleClassName="drag"
-            onResizeStop={resizeHandler}
-            disableDragging={true}
-            resizeGrid={[0,0]}
-        >
-            {_renderContent()}
-        </Rnd>
-    );
+        <div className="h-100 w-100 d-flex align-items-center justify-content-center">
+
+        <div className={classnames({"h-100 w-100": fullScreen}, {"w-75 h-75": !fullScreen})}>
+            <div className="d-flex align-items-center justify-content-center h-100 w-100">
+                {_renderContent()}
+            </div>
+        </div>
+        </div>
+    )
 
 }
 

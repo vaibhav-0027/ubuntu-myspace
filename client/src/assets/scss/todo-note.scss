@@ -72,13 +72,18 @@
     flex-direction: row;
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 945px) {
     .todo-container-div {
         flex-direction: column;
+        overflow-y: scroll;
     }
 
     .todo-container {
         width: 100%;
+        height: min-content;
+        height: 230px;
+        margin-bottom: 30px;
+
         .row {
             flex-wrap: nowrap;
         }
@@ -100,7 +105,7 @@
     border: none;
 }
 
-.note-container {
+.note-container-list {
     width: 50%;
 }
 
@@ -120,12 +125,21 @@
 }
 
 @media all and (max-width: 768px) {
-    .note-container {
+    .note-container-list {
         width: 100%;
+        margin-bottom: 50px;
+        height: 200px !important;
+        min-height: 180px !important;
+        overflow-y: scroll;
     }
 
     .note-container-div {
         flex-direction: column;
+        overflow-y: scroll;
+    }
+
+    .notes-quill > .ql-container {
+        height: 240px !important;
     }
 
     .single-note {

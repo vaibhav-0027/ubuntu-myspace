@@ -75,7 +75,7 @@ const Notes = (props: NotesProps) => {
             {_renderNewNoteButton()}
 
             <div className="mx-3 h-100 note-container-div">
-                <div className="h-75 note-container d-flex flex-column">
+                <div className="h-75 note-container-list d-flex flex-column">
                     {
                         notes.map((_current: Note) => {
                             return <SingleNote 
