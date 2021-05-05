@@ -9,6 +9,7 @@ import { FetchNotes } from '../../actions/NotesAction';
 import { connect } from 'react-redux';
 import Explorer from '../Explorer';
 import Terminal from '../Terminal';
+import TicTacToe from '../TicTacToe';
 
 interface landingPageProps {
     fetchTodos: () => void;
@@ -22,6 +23,7 @@ const LandingPage = (props: landingPageProps) => {
         notes: false,
         explorer: false,
         terminal: false,
+        tictactoe: false,
     });
 
     useEffect(() => {
@@ -41,6 +43,7 @@ const LandingPage = (props: landingPageProps) => {
                 <Window component={Notes} isOpen={open.notes} setOpen={setOpen} />
                 <Window component={Explorer} isOpen={open.explorer} setOpen={setOpen} />
                 <Window component={Terminal} isOpen={open.terminal} setOpen={setOpen} />
+                <Window component={TicTacToe} isOpen={open.tictactoe} setOpen={setOpen} />
             </div>
 
 

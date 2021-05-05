@@ -33,9 +33,9 @@ const TerminalApp = () => {
                 color="green"
                 backgroundColor="black"
                 hideTopBar={true}
-                style={{maxWidth: "100%", lineHeight: "0.7em", fontSize: "1em"}}
+                style={{maxWidth: "100%", height: "100%", lineHeight: "0.7em", fontSize: "1em"}}
                 msg={`Welcome ${getUserAccessName()}, you can use some commands here!`}
-                
+                startState='maximised'
                 description={descriptions}
 
                 commands={{

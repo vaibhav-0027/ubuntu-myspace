@@ -1,0 +1,28 @@
+.tictactoe-single-grid {
+    background-color: $orange;
+    padding: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    height: 120px !important;
+    width: 120px !important;
+    font-size: 80px;
+    text-shadow: 2px 2px 8px black;
+    align-items: center;
+    justify-content: center;
+}
+
+.tictactoe-grid-row {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.tictactoe-refresh-button {
+    transition: transform .7s ease-in-out;
+
+    &:hover {
+        transform: rotate(90deg);
+    }
+}

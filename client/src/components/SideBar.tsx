@@ -6,6 +6,7 @@ import todoIcon from "../assets/images/todo-icon.png";
 import notesIcon from "../assets/images/notes-icon.png";
 import explorerIcon from "../assets/images/explorer-icon.png";
 import terminalIcon from "../assets/images/terminal-icon.png";
+import tictactoeIcon from "../assets/images/tictactoe-icon.png";
 
 interface sidebarIcon {
     name: string;
@@ -18,6 +19,7 @@ interface sidebarApps {
     notes: boolean; 
     explorer: boolean; 
     terminal: boolean;
+    tictactoe: boolean;
 }
 
 interface sidebarProps {
@@ -31,6 +33,7 @@ const SideBar = ({setOpen}: sidebarProps) => {
         { name: "todos", icon: todoIcon, description: "Keep your tasks organized" },
         { name: "notes", icon: notesIcon, description: "Jot down your amazing thoughts" },
         { name: "explorer", icon: explorerIcon, description: "Explore your files" },
+        { name: "tictactoe", icon: tictactoeIcon, description: "Take a chill pill" },
         { name: "terminal", icon: terminalIcon, description: "Terminal" },
     ];
 
@@ -46,12 +49,14 @@ const SideBar = ({setOpen}: sidebarProps) => {
                                 notes: false,
                                 explorer: false,
                                 terminal: false,
+                                tictactoe: false,
                             };
                             let name: string = _current.name
                             if(name === "todos") res['todos'] = true;
                             if(name === "notes") res['notes'] = true;
                             if(name === "explorer") res['explorer'] = true;
                             if(name === "terminal") res['terminal'] = true;
+                            if(name === "tictactoe") res['tictactoe'] = true;
                             return res;
                         })
                     }
