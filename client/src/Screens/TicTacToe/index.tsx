@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { toast } from 'react-toastify';
 import { Row, Tooltip } from 'reactstrap';
 import SingleGrid from './SingleGrid'
@@ -13,25 +13,34 @@ interface CurrentPlayerProps {
 
 const INIT_GRID: Array<SingleGridProps> = Array(9).fill({value: 0});
 
+const valid = [
+    [0,1,2],
+    [3,4,5],
+    [6,7,8],
+    [0,3,6],
+    [1,4,7],
+    [2,5,8],
+    [0,4,8],
+    [2,4,6],
+];
+
 const TicTacToe = () => {
 
     const [gridValue, setGridValue] = useState(INIT_GRID);
     const [currentPlayer, setCurrentPlayer] = useState<CurrentPlayerProps>({value: 1});
     const [gameFinish, setGameFinish] = useState(false);
+    const [usedCells, setUsedCells] = useState(0);
     const [tooltipOpen, setTooltipOpen] = useState(false);
     const toggleTooltip = () => setTooltipOpen(!tooltipOpen);
 
+    useEffect(() => {
+        if(currentPlayer.value === 1)
+            return ;
+
+
+    }, [currentPlayer]);
+
     const checkWinner = (idx: number, values: Array<SingleGridProps>) => {
-        const valid = [
-            [0,1,2],
-            [3,4,5],
-            [6,7,8],
-            [0,3,6],
-            [1,4,7],
-            [2,5,8],
-            [0,4,8],
-            [2,4,6],
-        ];
 
         for(let i=0; i<8; ++i) {
             if(valid[i].lastIndexOf(idx) !== -1) {
@@ -47,9 +56,13 @@ const TicTacToe = () => {
 
     const singleGridClickHandler = (idx: number) => {
 
-        if(gameFinish) {
-            return ;
-        }
+        // if(gameFinish || currentPlayer.value === 2) {
+        //     return ;
+        // }
+
+        if(gameFinish) return ;
+
+        setUsedCells(usedCells + 1);
 
         let temp: Array<SingleGridProps> = [];
         for(let i=0; i<9; ++i) {
@@ -80,6 +93,7 @@ const TicTacToe = () => {
         setGridValue(INIT_GRID);
         setGameFinish(false);
         setCurrentPlayer({value: 1});
+        setUsedCells(0);
     }
 
     const _renderHeader = () => {
@@ -103,6 +117,7 @@ const TicTacToe = () => {
                         toggle={toggleTooltip}
                         target="refresh-button"
                         placement="right"
+                        delay={ {show: 500, hide: 200} }
                     >
                         Restart Game
                     </Tooltip>

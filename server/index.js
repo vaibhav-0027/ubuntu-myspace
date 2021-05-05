@@ -18,7 +18,13 @@ app.use(express.urlencoded({ extended: false }));
 app.use(logger('dev'));
 app.use(cookieParser());
 
+app.use(express.static(path.join(__dirname, '..', 'client', 'build')));
+
 app.use('/api', require("./routes"));
+
+app.get('/*', (req, res) => {
+  return res.sendFile(path.join(__dirname, "..", 'client', 'build', 'index.html'));
+});
 
 // Sync Sequelize models with db, and then start the server
 sequelizeDb.sequelize.sync({alter: true}).then(() => {
