@@ -8,6 +8,7 @@ interface sidebarApps {
     explorer: boolean;
     terminal: boolean;
     tictactoe: boolean;
+    calculator: boolean;
 }
 
 interface windowProps {
@@ -51,6 +52,7 @@ const Window = (props: windowProps) => {
             explorer: false,
             terminal: false,
             tictactoe: false,
+            calculator: false,
         });
     }
 

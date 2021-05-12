@@ -66,7 +66,7 @@ const TicTacToe = () => {
 
         let temp: Array<SingleGridProps> = [];
         for(let i=0; i<9; ++i) {
-            if(i == idx) {
+            if(i === idx) {
                 temp.push({value: currentPlayer.value});
             } else {
                 temp.push(gridValue[i]);

@@ -10,6 +10,7 @@ import { connect } from 'react-redux';
 import Explorer from '../Explorer';
 import Terminal from '../Terminal';
 import TicTacToe from '../TicTacToe';
+import CalculatorScreen from '../Calculator';
 
 interface landingPageProps {
     fetchTodos: () => void;
@@ -24,6 +25,7 @@ const LandingPage = (props: landingPageProps) => {
         explorer: false,
         terminal: false,
         tictactoe: false,
+        calculator: false,
     });
 
     useEffect(() => {
@@ -44,6 +46,7 @@ const LandingPage = (props: landingPageProps) => {
                 <Window component={Explorer} isOpen={open.explorer} setOpen={setOpen} />
                 <Window component={Terminal} isOpen={open.terminal} setOpen={setOpen} />
                 <Window component={TicTacToe} isOpen={open.tictactoe} setOpen={setOpen} />
+                <Window component={CalculatorScreen} isOpen={open.calculator} setOpen={setOpen} />
             </div>
 
 
