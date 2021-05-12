@@ -1,5 +1,3 @@
-import React from 'react';
-
 interface CalcOption {
     value?: string;
     src?: string;

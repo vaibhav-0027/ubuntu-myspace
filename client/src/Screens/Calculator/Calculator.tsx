@@ -15,7 +15,7 @@ const Calculator = () => {
 
     const [width, setWidth] = useState<string>("");
     const [display, setDisplay] = useState("");
-    const [engine, setEngine] = useState(new Engine());
+    const [engine] = useState(new Engine());
 
     const buttonClickHandler = (value: string) => {
         setDisplay(engine.calculate(value))

@@ -153,7 +153,7 @@ const SingleFile = (props: SingleFileProps) => {
                 <span className="file-name-span ">
                     {info.name}
                 </span>
-                <a target="_blank" id={info.id} />
+                <a target="_blank" href="_#"  id={info.id} style={{display: "none"}} >""</a>
             </div>
 
             {_renderContextMenu()}

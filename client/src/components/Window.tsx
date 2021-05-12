@@ -1,6 +1,6 @@
 import classnames from 'classnames';
 import React, { Dispatch, SetStateAction, useState } from 'react'
-import { Rnd } from "react-rnd";
+// import { Rnd } from "react-rnd";
 
 interface sidebarApps {
     todos: boolean;
@@ -21,9 +21,9 @@ const Window = (props: windowProps) => {
 
     const [fullScreen, setFullScreen] = useState(true);
 
-    const [height, setHeight] = useState(window.innerHeight-100);
-    const [width, setWidth] = useState(window.innerWidth-90);
-    const rndRef = React.useRef(null);
+    // const [height, setHeight] = useState(window.innerHeight-100);
+    // const [width, setWidth] = useState(window.innerWidth-90);
+    // const rndRef = React.useRef(null);
 
     // useEffect(() => {
     //     const handleWindowResize = () => {
@@ -36,10 +36,10 @@ const Window = (props: windowProps) => {
 
     // console.log(height, width);
 
-    const resizeHandler = (e: any, direction: any, ref: any) => {
-        setHeight(ref.style.height.slice(0,-2));
-        setWidth(ref.style.width.slice(0,-2));
-    }
+    // const resizeHandler = (e: any, direction: any, ref: any) => {
+    //     setHeight(ref.style.height.slice(0,-2));
+    //     setWidth(ref.style.width.slice(0,-2));
+    // }
 
     const getFirstIcon = () => {
         return "ri-checkbox-blank-line"
@@ -60,8 +60,8 @@ const Window = (props: windowProps) => {
         // setHeight(window.innerHeight);
         // setWidth(window.innerWidth);
         // rndRef?.current?.updateSize({ width: window.innerWidth, height: window.innerHeight });
+        setFullScreen(fullScreen);
         return ;
-        setFullScreen(!fullScreen);
     }
 
     const _renderTopbar = () => {
