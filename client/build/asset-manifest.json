@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b29bc8ff.chunk.css",
+    "main.js": "/static/js/main.0780ffe1.chunk.js",
+    "main.js.map": "/static/js/main.0780ffe1.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.a06e69b5.js",
+    "runtime-main.js.map": "/static/js/runtime-main.a06e69b5.js.map",
+    "static/css/2.4d55f1e1.chunk.css": "/static/css/2.4d55f1e1.chunk.css",
+    "static/js/2.334847ad.chunk.js": "/static/js/2.334847ad.chunk.js",
+    "static/js/2.334847ad.chunk.js.map": "/static/js/2.334847ad.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.4d55f1e1.chunk.css.map": "/static/css/2.4d55f1e1.chunk.css.map",
+    "static/css/main.b29bc8ff.chunk.css.map": "/static/css/main.b29bc8ff.chunk.css.map",
+    "static/js/2.334847ad.chunk.js.LICENSE.txt": "/static/js/2.334847ad.chunk.js.LICENSE.txt",
+    "static/media/calculator-icon.20ddd8b3.png": "/static/media/calculator-icon.20ddd8b3.png",
+    "static/media/chrome-icon.60b180d6.png": "/static/media/chrome-icon.60b180d6.png",
+    "static/media/explorer-icon.934bd7e5.png": "/static/media/explorer-icon.934bd7e5.png",
+    "static/media/all.min.css": "/static/media/fa-solid-900.efbd5d20.eot",
+    "static/media/notes-icon.eec329d2.png": "/static/media/notes-icon.eec329d2.png",
+    "static/media/remixicon.css": "/static/media/remixicon.f2616f59.ttf",
+    "static/media/tictactoe-icon.bbf5deb0.png": "/static/media/tictactoe-icon.bbf5deb0.png",
+    "static/media/todo-icon.8c238d01.png": "/static/media/todo-icon.8c238d01.png",
+    "static/media/index.scss": "/static/media/ubuntu-wallpaper.f5ac675a.jpg",
+    "static/media/ubuntu_orange_hex.38a7d4c2.svg": "/static/media/ubuntu_orange_hex.38a7d4c2.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a06e69b5.js",
+    "static/css/2.4d55f1e1.chunk.css",
+    "static/js/2.334847ad.chunk.js",
+    "static/css/main.b29bc8ff.chunk.css",
+    "static/js/main.0780ffe1.chunk.js"
+  ]
+}
