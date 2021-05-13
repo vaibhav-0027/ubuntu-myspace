@@ -8,6 +8,7 @@ import explorerIcon from "../assets/images/explorer-icon.png";
 import terminalIcon from "../assets/images/terminal-icon.png";
 import tictactoeIcon from "../assets/images/tictactoe-icon.png";
 import calculatorIcon from "../assets/images/calculator-icon.png";
+import whiteboardIcon from "../assets/images/whiteboard-icon.png";
 
 interface sidebarIcon {
     name: string;
@@ -22,6 +23,7 @@ interface sidebarApps {
     terminal: boolean;
     tictactoe: boolean;
     calculator: boolean;
+    whiteboard: boolean;
 }
 
 interface sidebarProps {
@@ -36,6 +38,7 @@ const SideBar = ({setOpen}: sidebarProps) => {
         { name: "notes", icon: notesIcon, description: "Jot down your amazing thoughts" },
         { name: "explorer", icon: explorerIcon, description: "Explore your files" },
         { name: "calculator", icon: calculatorIcon, description: "Let's do some math" },
+        { name: "whiteboard", icon: whiteboardIcon, description: "Draw your mind" },
         { name: "tictactoe", icon: tictactoeIcon, description: "Take a chill pill" },
         { name: "terminal", icon: terminalIcon, description: "Terminal" },
     ];
@@ -54,6 +57,7 @@ const SideBar = ({setOpen}: sidebarProps) => {
                                 terminal: false,
                                 tictactoe: false,
                                 calculator: false,
+                                whiteboard: false,
                             };
                             let name: string = _current.name
                             if(name === "todos") res['todos'] = true;
@@ -62,6 +66,7 @@ const SideBar = ({setOpen}: sidebarProps) => {
                             if(name === "terminal") res['terminal'] = true;
                             if(name === "tictactoe") res['tictactoe'] = true;
                             if(name === "calculator") res['calculator'] = true;
+                            if(name === "whiteboard") res['whiteboard'] = true;
                             return res;
                         })
                     }

@@ -8,6 +8,7 @@ import './assets/scss/index.scss';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "react-quill/dist/quill.snow.css";
 import "react-toastify/dist/ReactToastify.css";
+import "react-input-range/lib/css/index.css";
 
 ReactDOM.render(
   <MainApp />,

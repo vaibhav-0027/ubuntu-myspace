@@ -1,0 +1,15 @@
+.line-width-container {
+    
+    .input-range__slider {
+        background: $orange;
+        border-color: $orange;
+    }
+
+    .input-range__track--active {
+        background: $orange;
+    }
+
+    .input-range__label {
+        color: black;
+    }
+}

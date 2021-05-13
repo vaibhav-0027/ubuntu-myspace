@@ -11,6 +11,7 @@ import Explorer from '../Explorer';
 import Terminal from '../Terminal';
 import TicTacToe from '../TicTacToe';
 import CalculatorScreen from '../Calculator';
+import Whiteboard from '../Whiteboard';
 
 interface landingPageProps {
     fetchTodos: () => void;
@@ -26,6 +27,7 @@ const LandingPage = (props: landingPageProps) => {
         terminal: false,
         tictactoe: false,
         calculator: false,
+        whiteboard: false,
     });
 
     useEffect(() => {
@@ -47,6 +49,7 @@ const LandingPage = (props: landingPageProps) => {
                 <Window component={Terminal} isOpen={open.terminal} setOpen={setOpen} />
                 <Window component={TicTacToe} isOpen={open.tictactoe} setOpen={setOpen} />
                 <Window component={CalculatorScreen} isOpen={open.calculator} setOpen={setOpen} />
+                <Window component={Whiteboard} isOpen={open.whiteboard} setOpen={setOpen} />
             </div>
 
 
