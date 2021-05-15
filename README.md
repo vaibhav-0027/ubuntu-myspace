@@ -1,5 +1,9 @@
 <h1>Ubuntu-MySpace</h1>
 
+<p align="center" >
+	<img src="https://github.com/vaibhav-0027/ubuntu-myspace/blob/master/README-images/home-screen.png" height="350" >
+</p> 
+
 <!-- TABLE OF CONTENTS -->
 <details open="open">
   <summary>Table of Contents</summary>
@@ -26,7 +30,97 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-{TO BE ADDED}
+<!-- <p style="display: flex; flex-direction: row;" > 
+	<img src="https://github.com/vaibhav-0027/ubuntu-myspace/blob/master/README-images/login-screen.png" height="350" >
+	<p style="display: flex; align-items: center; justify-content: center;" >
+		The user has to either create a new account or login in to an existing account.
+	</p>
+</p> -->
+
+<!-- <div style="width: 100%; display: flex; flex-direction: row; align-items: center; justify-content: center;">
+	<img src="https://github.com/vaibhav-0027/ubuntu-myspace/blob/master/README-images/login-screen.png" height="350" > SOME TEXT
+</div> -->
+
+<table style="border: 0px solid black;" >
+	<tr>
+		<td width="75%" >
+			<img src="https://github.com/vaibhav-0027/ubuntu-myspace/blob/master/README-images/login-screen.png" height="350" >
+		</td>
+		<td>
+			The user has to either create a new account or login in to an existing account.
+		</td>
+	</tr>
+</table>
+<table>
+	<tr>
+		<td width="25%">
+			The user has to either create a new account or login in to an existing account.
+		</td>
+		<td width="75%" >
+			<img src="https://github.com/vaibhav-0027/ubuntu-myspace/blob/master/README-images/todo-list.png" height="350" >
+		</td>
+	</tr>
+</table>
+<table>
+	<tr>
+		<td width="75%" >
+			<img src="https://github.com/vaibhav-0027/ubuntu-myspace/blob/master/README-images/notes.png" height="350" >
+		</td>
+		<td width="25%">
+			The user has to either create a new account or login in to an existing account.
+		</td>
+	</tr>
+</table>
+<table>
+	<tr>
+		<td>
+			The user has to either create a new account or login in to an existing account.
+		</td>
+		<td width="75%" >
+			<img src="https://github.com/vaibhav-0027/ubuntu-myspace/blob/master/README-images/explorer.png" height="350" >
+		</td>
+	</tr>
+</table>
+<table>
+	<tr>
+		<td width="75%" >
+			<img src="https://github.com/vaibhav-0027/ubuntu-myspace/blob/master/README-images/calculator.png" height="350" >
+		</td>
+		<td>
+			The user has to either create a new account or login in to an existing account.
+		</td>
+	</tr>
+</table>
+<table>
+	<tr>
+		<td>
+			The user has to either create a new account or login in to an existing account.
+		</td>
+		<td width="75%" >
+			<img src="https://github.com/vaibhav-0027/ubuntu-myspace/blob/master/README-images/whiteboard.png" height="350" >
+		</td>
+	</tr>
+</table>
+<table>
+	<tr>
+		<td width="75%" >
+			<img src="https://github.com/vaibhav-0027/ubuntu-myspace/blob/master/README-images/tictactoe.png" height="350" >
+		</td>
+		<td>
+			The user has to either create a new account or login in to an existing account.
+		</td>
+	</tr>
+</table>
+<table>
+	<tr>
+		<td>
+			The user has to either create a new account or login in to an existing account.
+		</td>
+		<td width="75%" >
+			<img src="https://github.com/vaibhav-0027/ubuntu-myspace/blob/master/README-images/terminal.png" height="350" >
+		</td>
+	</tr>
+</table>
 
 ### Built With
 
@@ -57,13 +151,13 @@ These steps will help you setup this project in your device
 
 ## Installation
 
-1. Create a new postgres database called ```ubuntu-myspace``` in your device.
+1. Create a new postgres database called `ubuntu-myspace` in your device.
 2. Create a new user if there is no already existing user in postgres.
-3. For using ```File Explorer``` part of the application, 
+3. For using `File Explorer` part of the application, 
 	* Generate a set of [S3](https://s3.console.aws.amazon.com/s3/home) credentials
-	* Create a public bucket named ```ubuntu-myspace```
-4. Create a ```config.js``` file in server main directory.
-5. ```
+	* Create a public bucket named `ubuntu-myspace`
+4. Create a `config.js` file in server main directory.
+5. ```javascript
 	const config = {
 		"postgres": {
 		  "username": "YOUR POSTGRES USERNAME",
