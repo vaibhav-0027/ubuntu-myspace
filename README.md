@@ -4,6 +4,10 @@
 	<img src="https://github.com/vaibhav-0027/ubuntu-myspace/blob/master/README-images/home-screen.png" height="350" >
 </p> 
 
+<p align="center" style="font-weight: bold;" >
+	Experience UBUNTU-UI on the web
+</p>
+
 <!-- TABLE OF CONTENTS -->
 <details open="open">
   <summary>Table of Contents</summary>
@@ -30,18 +34,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<!-- <p style="display: flex; flex-direction: row;" > 
-	<img src="https://github.com/vaibhav-0027/ubuntu-myspace/blob/master/README-images/login-screen.png" height="350" >
-	<p style="display: flex; align-items: center; justify-content: center;" >
-		The user has to either create a new account or login in to an existing account.
-	</p>
-</p> -->
-
-<!-- <div style="width: 100%; display: flex; flex-direction: row; align-items: center; justify-content: center;">
-	<img src="https://github.com/vaibhav-0027/ubuntu-myspace/blob/master/README-images/login-screen.png" height="350" > SOME TEXT
-</div> -->
-
-<table style="border: 0px solid black;" >
+<table>
 	<tr>
 		<td width="75%" >
 			<img src="https://github.com/vaibhav-0027/ubuntu-myspace/blob/master/README-images/login-screen.png" height="350" >
@@ -54,7 +47,7 @@
 <table>
 	<tr>
 		<td width="25%">
-			The user has to either create a new account or login in to an existing account.
+			We can keep track of all the tasks at hand.
 		</td>
 		<td width="75%" >
 			<img src="https://github.com/vaibhav-0027/ubuntu-myspace/blob/master/README-images/todo-list.png" height="350" >
@@ -67,14 +60,14 @@
 			<img src="https://github.com/vaibhav-0027/ubuntu-myspace/blob/master/README-images/notes.png" height="350" >
 		</td>
 		<td width="25%">
-			The user has to either create a new account or login in to an existing account.
+			We can make notes and jot down any ideas that we get in realtime and manage them.
 		</td>
 	</tr>
 </table>
 <table>
 	<tr>
 		<td>
-			The user has to either create a new account or login in to an existing account.
+			Easily manage your files by keeping them sorted into folders by uploading, deleting and renaming folders. All the files are stored in AWS S3 and completely secure.
 		</td>
 		<td width="75%" >
 			<img src="https://github.com/vaibhav-0027/ubuntu-myspace/blob/master/README-images/explorer.png" height="350" >
@@ -87,14 +80,14 @@
 			<img src="https://github.com/vaibhav-0027/ubuntu-myspace/blob/master/README-images/calculator.png" height="350" >
 		</td>
 		<td>
-			The user has to either create a new account or login in to an existing account.
+			The user can make computations using the calculator.
 		</td>
 	</tr>
 </table>
 <table>
 	<tr>
 		<td>
-			The user has to either create a new account or login in to an existing account.
+			We can draw stuff on whiteboard using different colors and shapes and also delete selected shapes, and also edit them later.
 		</td>
 		<td width="75%" >
 			<img src="https://github.com/vaibhav-0027/ubuntu-myspace/blob/master/README-images/whiteboard.png" height="350" >
@@ -107,14 +100,14 @@
 			<img src="https://github.com/vaibhav-0027/ubuntu-myspace/blob/master/README-images/tictactoe.png" height="350" >
 		</td>
 		<td>
-			The user has to either create a new account or login in to an existing account.
+			User can play a game of Tic-Tac-Toe in free time and relax.
 		</td>
 	</tr>
 </table>
 <table>
 	<tr>
 		<td>
-			The user has to either create a new account or login in to an existing account.
+			Experience noobie terminal experience with hardcoded commands.
 		</td>
 		<td width="75%" >
 			<img src="https://github.com/vaibhav-0027/ubuntu-myspace/blob/master/README-images/terminal.png" height="350" >
@@ -140,7 +133,7 @@ These steps will help you setup this project in your device
 
 * npm
   ```sh
-  npm install npm@latest -g
+  npm install npm@latest
   ```
   
 * postgres
@@ -160,8 +153,8 @@ These steps will help you setup this project in your device
 5. ```javascript
 	const config = {
 		"postgres": {
-		  "username": "YOUR POSTGRES USERNAME",
-		  "password": "YOUR POSTGRES PASSWORD FOR THAT USER",
+		  "username": "YOUR_POSTGRES_USERNAME",
+		  "password": "YOUR_POSTGRES_PASSWORD_FOR_THAT_USER",
 		  "database": "ubuntu-myspace",
 		  "host": "127.0.0.1",
 		  "dialect": "postgres"
@@ -169,8 +162,8 @@ These steps will help you setup this project in your device
 		"host": "http://localhost:8080",
 		"clientHost": "http://localhost:3000",
 		"s3Credentials": {
-		  "AWSAccessKeyId": "GET FROM AWS S3",
-		  "AWSSecretKey": "GET FROM AWS S3"
+		  "AWSAccessKeyId": "GET_FROM_AWS_S3",
+		  "AWSSecretKey": "GET_FROM_AWS_S3"
 		}
 	};
 	module.exports = config;
@@ -189,7 +182,7 @@ These steps will help you setup this project in your device
 	```
 	
 <!-- CONTRIBUTING -->
-## Contributing
+## Contributions
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
@@ -202,6 +195,6 @@ Contributions are what make the open source community such an amazing place to b
 <!-- CONTACT -->
 ## Contact
 
-Vaibhav - [@vaibhav-0027](https://www.linkedin.com/in/vaibhav-0027/) - vaibhavdhingra10@gmail.com
+Vaibhav - [LinkedIn](https://www.linkedin.com/in/vaibhav-0027/) - vaibhavdhingra10@gmail.com
 
 Project Link: [https://github.com/vaibhav-0027/ubuntu-myspace](https://github.com/vaibhav-0027/ubuntu-myspace)
